@@ -29,7 +29,7 @@ end
 Rake::RDocTask.new { |rdoc|
   rdoc.rdoc_dir = 'doc'
   rdoc.title    = "Rubicus - Graphing Library for Ruby using the ploticus backend."
-  rdoc.rdoc_files.include("README", "CHANGELOG", "MIT-LICENSE")
+  rdoc.rdoc_files.include("README", "CHANGES", "MIT-LICENSE")
   rdoc.rdoc_files.include("lib/rubicus.rb")
   rdoc.rdoc_files.include("lib/rubicus/*.rb")
   rdoc.rdoc_files.include("lib/rubicus/layers/*.rb")
@@ -80,5 +80,6 @@ task :publish_packages => [:verify_user, :verify_password, :package] do
     xf.password = ENV['RUBYFORGE_PASSWORD']
     xf.files = release_files.to_a
     xf.release_name = "Rubicus #{PKG_VERSION}"
+    xf
   end
 end
