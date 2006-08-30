@@ -1,0 +1,11 @@
+==Rubicus
+
+Author:: Jonathan Younger (jonathan@daikini.com)
+Date:: August 24th, 2006
+
+Rubicus is a pure Ruby wrapper around the ploticus http://ploticus.sourceforge.net graphing library.
+
+For basic usage instructions, refer to the documentation for Rubicus::Graph.
+
+Based on the design of Scruffy Graphs (a beautiful graphing library for Ruby) by Brasten Sager. http://scruffy.rubyforge.org/
+Custom ploticus graph code taken from ploticus.rb by Mike Neumann. http://www.ntecs.de/blog-old/Blog/RubyPloticus.rdoc
