@@ -49,7 +49,9 @@ module Rubicus::Layers
     end
 
     class AttrWriter
+      orig_verbosity, $VERBOSE = $VERBOSE, nil
       instance_methods.each { |m| undef_method m unless m =~ /^__/ }
+      $VERBOSE = orig_verbosity
 
       def __attrs__
         @attrs

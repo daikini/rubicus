@@ -1,5 +1,10 @@
 = Rubicus Changelog
 
+== Version 0.1.1
+(November 7th, 2012)
+
+* Quiet warnings from Ruby 1.9.3.
+
 == Version 0.1.0
 (August 24th, 2006)
 
